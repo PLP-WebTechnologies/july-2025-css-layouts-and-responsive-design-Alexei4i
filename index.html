@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Result Checker</title>
+    <meta name="description" content="Check your academic exam results securely and quickly. Access result updates, support, and resources.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Exam Result Checker</h1>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="#check-result">Results</a></li>
+                <li><a href="#guidelines">Guidelines</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#support">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Flex Section: Result Checking Form -->
+        <section id="check-result" class="flex-section" aria-labelledby="result-form-title">
+            <div class="flex-item center-text">
+                <h2 id="result-form-title"><strong>Check Your Results</strong></h2>
+                <form action="https://www.neco.gov.ng/results" method="get" aria-label="Result Checking Form">
+                    <label for="exam-number"><em>Exam Number:</em></label><br>
+                    <input type="text" id="exam-number" name="exam-number" required aria-required="true" placeholder="Enter your exam number"><br><br>
+                    <label for="exam-year"><em>Exam Year:</em></label><br>
+                    <input type="number" id="exam-year" name="exam-year" min="2000" max="2025" required aria-required="true" placeholder="e.g. 2025"><br><br>
+                    <label for="exam-type"><em>Exam Type:</em></label><br>
+                    <select id="exam-type" name="exam-type" required aria-required="true">
+                        <option value="">Select</option>
+                        <option value="waec">WAEC</option>
+                        <option value="neco">NECO</option>
+                        <option value="jamb">JAMB</option>
+                    </select><br><br>
+                    <button type="submit"><strong>Check Result</strong></button>
+                </form>
+            </div>
+            <div class="flex-item right-text">
+                <h2><strong>Latest Updates</strong></h2>
+                <p><em>2025 NECO results are now available!</em></p>
+                <p>For official updates, visit <a href="https://www.neco.gov.ng/" target="_blank" rel="noopener">NECO Official Site</a> or <a href="https://www.waecdirect.org/" target="_blank" rel="noopener">WAEC Direct</a>.</p>
+                <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=400&q=80" alt="Students checking results" style="width:90%;border-radius:8px;box-shadow:0 0.5% 2% rgba(44,62,80,0.10);margin-top:1rem;">
+            </div>
+        </section>
+
+        <!-- Grid Section: Guidelines, Resources, Support -->
+        <section class="grid-section" aria-label="Information and Support">
+            <div class="grid-item center-text">
+                <h3><strong>Guidelines</strong></h3>
+                <p>Follow the <a href="https://www.jamb.gov.ng/" target="_blank" rel="noopener">JAMB guidelines</a> for checking your results securely.</p>
+                <ul>
+                    <li>Use your correct exam number.</li>
+                    <li>Ensure your exam year is accurate.</li>
+                    <li>Contact support if you have issues.</li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h3><strong>Resources</strong></h3>
+                <p>Access past questions and exam tips at <a href="https://myschool.ng/" target="_blank" rel="noopener">MySchool.ng</a>.</p>
+                <p>Download official result checker apps from <a href="https://play.google.com/store/search?q=result+checker" target="_blank" rel="noopener">Google Play</a>.</p>
+            </div>
+            <div class="grid-item right-text">
+                <h3><strong>Support</strong></h3>
+                <p>Need help? <em>Contact our support team:</em></p>
+                <ul>
+                    <li>Email: <a href="mailto:support@resultchecker.com">support@resultchecker.com</a></li>
+                    <li>Phone: <a href="tel:+2348001234567">+234 800 123 4567</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="center-text" aria-label="Site Footer">
+        <p>&copy; 2025 Exam Result Checker. All rights reserved.</p>
+    </footer>
+</body>
+</html>
